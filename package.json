@@ -1,11 +1,11 @@
 {
   "name": "@rickard.antonsson/ranode",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "Simple helper that can render html based on a simple schema",
-  "main": "build/src/index.js",
-  "types": "build/src/index.d.ts",
+  "main": "build/ranodeRenderer.js",
+  "types": "build/ranodeRenderer.d.ts",
   "files": [
-    "build/src"
+    "build"
   ],
   "license": "Apache-2.0",
   "keywords": [],
