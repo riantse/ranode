@@ -1,4 +1,5 @@
 import { On } from './On';
+
 export function addEventListeners(
   properties: {
     on?: On;
