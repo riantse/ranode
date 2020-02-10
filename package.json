@@ -1,7 +1,7 @@
 {
-  "name": "",
+  "name": "@rickard.antonsson/ranode",
   "version": "0.0.0",
-  "description": "",
+  "description": "Simple helper that can render html based on a simple schema",
   "main": "build/src/index.js",
   "types": "build/src/index.d.ts",
   "files": [
@@ -23,5 +23,15 @@
     "gts": "^1.1.2",
     "typescript": "~3.7.0",
     "@types/node": "^10.0.3"
-  }
+  },
+  "dependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/riant2/ranode.git"
+  },
+  "author": "Rickard Antonsson",
+  "bugs": {
+    "url": "https://github.com/riant2/ranode/issues"
+  },
+  "homepage": "https://github.com/riant2/ranode#readme"
 }
