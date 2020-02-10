@@ -2,7 +2,7 @@
   "extends": "./node_modules/gts/tsconfig-google.json",
   "compilerOptions": {
     "rootDir": "./src",
-    "outDir": "build",
+    "outFile": "build/ranode.js",
     "lib": ["dom"]
   },
   "include": ["src/**/*.ts", "test/**/*.ts"]
