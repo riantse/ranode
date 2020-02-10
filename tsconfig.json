@@ -3,6 +3,7 @@
   "compilerOptions": {
     "rootDir": "./src",
     "outFile": "build/ranode.js",
+    "module": "amd",
     "lib": ["dom"]
   },
   "include": ["src/**/*.ts", "test/**/*.ts"]
