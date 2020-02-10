@@ -2,8 +2,7 @@
   "extends": "./node_modules/gts/tsconfig-google.json",
   "compilerOptions": {
     "rootDir": "./src",
-    "outFile": "build/ranode.js",
-    "module": "amd",
+    "outDir": "build",
     "lib": ["dom"]
   },
   "include": ["src/**/*.ts", "test/**/*.ts"]
