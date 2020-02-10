@@ -1,6 +1,6 @@
 {
   "name": "@rickard.antonsson/ranode",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Simple helper that can render html based on a simple schema",
   "main": "build/ranodeRenderer.js",
   "types": "build/ranodeRenderer.d.ts",
