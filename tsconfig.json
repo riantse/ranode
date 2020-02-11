@@ -4,7 +4,7 @@
     "rootDir": "./src",
     "outDir": "build",
     "lib": ["dom"],
-    "importHelpers": true
+    "noEmitHelpers": true
   },
   "include": ["src/**/*.ts", "test/**/*.ts"]
 }
