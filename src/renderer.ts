@@ -2,7 +2,11 @@ import { addEventListeners } from './addEventListeners';
 import { setRecursive } from './setRecursive';
 import { Ranode } from './Ranode';
 
-export function renderer([stringOrElement, properties, ...children]: Ranode) {
+export function renderer([
+  stringOrElement,
+  properties,
+  children = [],
+]: Ranode): HTMLElement {
   const element =
     stringOrElement instanceof HTMLElement
       ? stringOrElement
@@ -23,7 +27,6 @@ export function renderer([stringOrElement, properties, ...children]: Ranode) {
         return;
       default:
         element.appendChild(renderer.apply(null, [child]));
-        break;
     }
   });
 
