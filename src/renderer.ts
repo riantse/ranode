@@ -4,7 +4,7 @@ import { Ranode } from './Ranode';
 
 export function renderer([
   stringOrElement,
-  properties,
+  properties = {},
   children = [],
 ]: Ranode): HTMLElement {
   const element =
@@ -12,10 +12,8 @@ export function renderer([
       ? stringOrElement
       : document.createElement(stringOrElement);
 
-  if (properties) {
-    properties = addEventListeners(properties, element);
-    setRecursive(properties, element);
-  }
+  properties = addEventListeners(properties, element);
+  setRecursive(properties, element);
 
   children.forEach(child => {
     switch (typeof child) {
