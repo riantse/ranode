@@ -2,19 +2,19 @@ import { addEventListeners } from './addEventListeners';
 import { setRecursive } from './setRecursive';
 import { Ranode } from './Ranode';
 
-export function ranodeRenderer([
+export function renderer([
   stringOrElement,
-  properties,
-  ...children
-]: Ranode) {
+  properties = {},
+  children = [],
+]: Ranode): HTMLElement {
   const element =
     stringOrElement instanceof HTMLElement
       ? stringOrElement
       : document.createElement(stringOrElement);
-  if (properties) {
-    properties = addEventListeners(properties, element);
-    setRecursive(properties, element);
-  }
+
+  properties = addEventListeners(properties, element);
+  setRecursive(properties, element);
+
   children.forEach(child => {
     switch (typeof child) {
       case 'string':
@@ -24,9 +24,9 @@ export function ranodeRenderer([
       case 'undefined':
         return;
       default:
-        element.appendChild(ranodeRenderer.apply(null, [child]));
-        break;
+        element.appendChild(renderer.apply(null, [child]));
     }
   });
+
   return element;
 }

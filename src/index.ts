@@ -3,4 +3,4 @@ export * from './On';
 export * from './Properties';
 export * from './Ranode';
 export * from './setRecursive';
-export * from './ranodeRenderer';
+export * from './renderer';
